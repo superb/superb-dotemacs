@@ -2,7 +2,12 @@
 ** Register
 We need a RSA key, generate the key in .ssh folder:
 : $ ssh-keygen -t rsa -C "chenyingliu@gmail.com"
-We will got two files under ~/.ssh folder: id_rsa and id_rsa.pub, use later one to register.
+We will got two files under ~/.ssh folder: id_rsa and id_rsa.pub, use later one
+to register.
+
+** Configuration
+: $ git config --global user.name "Thomas"
+: $ git config --global user.email ghosthomas@gmail.com
 
 ** Daily use
 1. create ~/superb-dotemacs to hold all files in repository
@@ -13,8 +18,10 @@ We will got two files under ~/.ssh folder: id_rsa and id_rsa.pub, use later one 
 : $ git-commit -a -m "new day for git"
 5. submit changes to github
 : $ git push origin master
-6. if remove something:
+6. try to update something change in file system:
 : $ git update-index
+7. cancel tracking in git:
+: $ git remove
    
 
 
