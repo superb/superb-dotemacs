@@ -1,0 +1,36 @@
+
+* Book Reading
+
+** Bash Guide for Beginners
+
+*** Chapter 5. The GNU sed stream editor
+sed commands
+- a\ append text below current line
+- c\ change text in current line with new text
+- i\ insert text above current line
+- d  delete text
+- p  print text
+- r  read file
+- w  write to file
+- s  search and replace
+
+some example:
+1. search "erors" and print out only matched contents:
+   sed -n '/erors/p' file
+
+2. delete lines of input containning a pattern
+   sed '/erors/d' example
+
+3. deal with a range of file
+   sed '2,4d' example                      # delete line 2, 3, 4
+   sed '3,$d' example                      # delete line 3 to end
+   sed -n '/a text/,/This/p' example       # print line has "a text" to line has "This"
+
+4. find and replace
+   sed 's/erors/errors/' example           # erors -> errors
+   sed 's/erors/errors/g' example          # the same, and replace all occurance in line
+   sed 's/^/> /' example                   # insert "> " at beginning of line
+   sed 's/$/EOL/' example                  # insert "EOL " at end of line
+   sed -e 's/erors/errors/g' -e 's/last/final/g' example   # multiple find and replace commands in one time
+
+*** Chapter 6. The GNU awk programming language

@@ -1,0 +1,10 @@
+* Topics
+** Git  
+*** TODO Learn git and how to use it to sync emacs configurations
+
+** Emacs
+*** ClearCase
+learn something from http://www.emacswiki.org/emacs/ClearCase
+*** Org-mode
+**** TODO How to use remember ?
+

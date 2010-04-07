@@ -1,0 +1,10 @@
+* Tips
+1. create another new shell: C-u M-x Shell
+
+* Org-mode
+** Basic shortcut keys
+*** Plain lists
+
+    
+  
+  

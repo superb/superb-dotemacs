@@ -1,0 +1,20 @@
+* How to use http://github.com/
+** Register
+We need a RSA key, generate the key in .ssh folder:
+: $ ssh-keygen -t rsa -C "chenyingliu@gmail.com"
+We will got two files under ~/.ssh folder: id_rsa and id_rsa.pub, use later one to register.
+
+** Daily use
+1. create ~/superb-dotemacs to hold all files in repository
+2. ln -s ~/notes/ . # link contents to that folder
+3. add something in git's tracking
+: $ git add notes
+4. make some change, commit to version control:
+: $ git-commit -a -m "new day for git"
+5. submit changes to github
+: $ git push origin master
+6. if remove something:
+: $ git update-index
+   
+
+

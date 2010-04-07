@@ -1,0 +1,56 @@
+* Tasks
+   
+** WAITING Dynamic tooltip of template				      :issue:
+   - State "WAITING"    from "STARTED"    [2010-04-07 Wed 04:35] \\
+     waiting for Jingbin
+   - State "STARTED"    from "TODO"       [2010-04-06 Tue 05:11]
+*** DONE HTML exporting need to retrieve the parsed result themselves.
+*** WAITING Fix some error in FormatNode methods
+    - State "WAITING"    from "TODO"       [2010-04-06 Tue 23:46] \\
+      fix this after Jingbin check in code for partial dataset group initialization
+1. do we have to change all FormatNodeXXX methods?
+2. what should be call before hProcessTemplateNodeVTInfo?
+
+** TODO Fix the problem that control's source and target maybe invalid after certain manipulations :issue:
+
+** WAITING Issue 400076, 399675,399665				      :issue:
+   - State "WAITING"    from "STARTED"    [2010-04-07 Wed 04:34] \\
+     waiting for Desktop side's response (Juan Pablo)
+   - State "STARTED"    from "TODO"       [2010-04-06 Tue 05:16]
+   From Juan, work flow changed in Desktop, debug the against the latest build.
+
+    
+
+** TODO Save set of breakpoints in Visual Studio		       :idea:
+
+** TODO read code about CreateElementList		       :code reading:
+
+** TODO Automation of ClearCase Remote Client			       :idea:
+
+** TODO Use Oprofiler or something else in performance testing	       :idea:
+
+** DONE Issue 399684						      :issue:
+   - State "DONE"       from "TODO"       [2010-04-06 Tue 23:43]
+As this is expected, set to TBC by QE
+
+** DONE Update design document of replace dataset and send it to Mayur :enhancement:
+   - State "DONE"       from "STARTED"    [2010-04-06 Tue 22:43]
+   - State "STARTED"    from "TODO"       [2010-04-06 Tue 22:20]
+     
+
+** TODO Checking the behavior of remove attribute from grid with UC on it
+
+
+** DONE An issue related with remove node in 9.0.1 build	      :issue:
+   - State "DONE"       from "STARTED"    [2010-04-07 Wed 04:57]
+   - State "STARTED"    from "TODO"       [2010-04-07 Wed 04:35]
+     not related with a preivous in RemoveNode Optimization
+** Archive							    :ARCHIVE:
+*** DONE Issue 399041						      :issue:
+    SCHEDULED: <2010-04-05 Mon>
+    - State "STARTED"    from "DONE"       [2010-04-02 Fri 03:04]
+    :PROPERTIES:
+    :ARCHIVE_TIME: 2010-04-06 Tue 03:15
+    :END:
+    do not remove disabled metrics when copy template in RWD, check hPostProcessTemplate
+    
