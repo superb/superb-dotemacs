@@ -1,0 +1,4 @@
+** Open another shell window in Emacs [2010-04-08 Thu 03:43]	      :emacs:
+
+
+C-u M-x shell

@@ -1,0 +1,6 @@
+* Issue
+For issue passed to other guys to investigate, just pass this issue in
+TQMS, set to TBA or Assinged. and write a email to that guy and cc
+their manager:
+1. Desktop: Kakushadze, Irakli; Carranza, Eduardo;
+2. Web: to be completed...
