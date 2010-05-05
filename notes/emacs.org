@@ -3,7 +3,9 @@
 
 * Org-mode
 ** Basic shortcut keys
-*** Plain lists
+** Remember Mode
+http://members.optusnet.com.au/~charles57/GTD/remember.html
+
 
     
   

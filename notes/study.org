@@ -5,6 +5,8 @@
 ** Emacs
 *** ClearCase
 learn something from http://www.emacswiki.org/emacs/ClearCase
+*** TODO Yasnippet
+How to use it ?
 *** Org-mode
 **** TODO How to use remember ?
 

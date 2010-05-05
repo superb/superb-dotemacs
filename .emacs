@@ -69,7 +69,7 @@
 (add-hook 'org-mode-hook 'turn-on-font-lock)  ; Org buffers only
 
 (setq org-todo-keywords  
-      (list "TODO(t)" "STARTED(s!)" "WAITING(w@)" "|" "CANCELED(c)" "DONE(d!)"))
+      (list "TODO(t)" "STARTED(s!)" "WAITING(w@)" "|" "CANCELED(c)" "DONE(d!@)"))
 
 (setq org-agenda-files  
       (list "~/notes/study.org"  
@@ -84,7 +84,8 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/notes/todo.org"))))
+ '(org-agenda-files (quote ("~/notes/todo.org")))
+ '(safe-local-variable-values (quote ((folded-file . t) (clearcase-version-stamp-active . t)))))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -98,7 +99,6 @@
 		      ("idea" . ?I)))
 
 ;; window-number setting
-
 (autoload 'window-number-mode "window-number"
   "A global minor mode that enables selection of windows according to
 numbers with the C-x C-j prefix.  Another mode,
@@ -113,3 +113,21 @@ the mode-line."
 
 (window-number-mode 1)
 (window-number-meta-mode 1)
+
+
+;; remember mode configuration
+(setq org-directory "~/orgfiles/")
+(setq org-default-notes-file "~/.notes")
+(setq remember-annotation-functions '(org-remember-annotation))
+(setq remember-handler-functions '(org-remember-handler))
+(add-hook 'remember-mode-hook 'org-remember-apply-template)
+(define-key global-map "\C-cr" 'org-remember)
+
+;; template
+(setq org-remember-templates
+    '(("Todo"   ?t "** TODO %^{Brief Description} %^g\n%?\nAdded: %U" "~/notes/remember_todo.org" "Tasks")
+      ("ToRead" ?j "** %^{Head Line} %U %^g\n%i%?"  "~/notes/remember_toread.org")
+      ("Tips"   ?c "** %^{Head Line} %U %^g\n%c\n%?"  "~/notes/remember_tips.org")))
+
+;; ClearCase configuration
+(load "clearcase")

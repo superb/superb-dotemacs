@@ -11,13 +11,19 @@
 1. do we have to change all FormatNodeXXX methods?
 2. what should be call before hProcessTemplateNodeVTInfo?
 
-** TODO Fix the problem that control's source and target maybe invalid after certain manipulations :issue:
+** WAITING Fix the problem that control's source and target maybe invalid after certain manipulations :issue:
+   - State "WAITING"    from "STARTED"    [2010-05-03 Mon 23:48] \\
+     check in
+   - State "STARTED"    from "TODO"       [2010-04-14 Wed 02:41]
 
-** WAITING Issue 400076, 399675,399665				      :issue:
+** DONE Issue 400076, 399675,399665				      :issue:
+   - State "DONE"       from "WAITING"    [2010-04-07 Wed 22:03]
+     passed to Juan
    - State "WAITING"    from "STARTED"    [2010-04-07 Wed 04:34] \\
      waiting for Desktop side's response (Juan Pablo)
    - State "STARTED"    from "TODO"       [2010-04-06 Tue 05:16]
    From Juan, work flow changed in Desktop, debug the against the latest build.
+   
 
     
 
@@ -42,15 +48,117 @@ As this is expected, set to TBC by QE
 
 
 ** DONE An issue related with remove node in 9.0.1 build	      :issue:
+   - State "WAITING"    from "STARTED"    [2010-04-11 Sun 23:10] \\
+     Don't know how to reproduce it ...
+   - State "STARTED"    from "DONE"       [2010-04-08 Thu 22:19]
+     start investigation again ..
    - State "DONE"       from "STARTED"    [2010-04-07 Wed 04:57]
    - State "STARTED"    from "TODO"       [2010-04-07 Wed 04:35]
      not related with a preivous in RemoveNode Optimization
+     
+     Don't know how to reproduce, close it...
+     
+
+** DONE Issue 400346						      :issue:
+   - State "STARTED"    from "TODO"       [2010-04-12 Mon 22:32]
+   - State "DONE"       from "STARTED"    [2010-04-08 Thu 22:18]
+   - State "STARTED"    from ""           [2010-04-07 Wed 21:41]
+maybe also desktop issue...
+passed to Desktop team
+Desktop need to know something about disabled units.
+The API in on axis, found.
+
+** WAITING Issue 400827,399041 (sth lost in disabled unit feature)    :issue:
+   - State "WAITING"    from "STARTED"    [2010-04-26 Mon 22:25] \\
+     For check-in
+   - State "STARTED"    from "WAITING"    [2010-04-20 Tue 21:35]
+     
+   - State "STARTED"    from "TODO"       [2010-04-08 Thu 22:29]
+     we can do the check-in job now
+
+** DONE Issue 400690						      :issue:
+from Haifeng, is it a web issue ?
+because of javascript cache, not an issue
+
+** DONE Issue 384140						      :issue:
+   - State "STARTED"    from "TODO"       [2010-04-08 Thu 22:36]
+     How to change error message?
+     Passed to Xiantao
+** DONE Issue 400878						      :issue:
+   a tricky behavior with normal report and working set report
+   set to TBC by QE
+** DONE Issue 400904						      :issue:
+   - State "WAITING"    from "STARTED"    [2010-04-12 Mon 05:19] \\
+     should also clear runtime unit limit in Template:RemoveRuntimeInfo, waiting for check-in
+   - State "STARTED"    from "TODO"       [2010-04-12 Mon 03:43]
+     
+** DONE Issue 400883						      :issue:
+   - State "WAITING"    from "TODO"       [2010-04-12 Mon 05:24] \\
+     Does flash side grid manipulation related with backend?
+     Flash should use the new "disable from grid" call
+** DONE Issue 400805 bug in add disabled metric			      :issue:
+   - State "STARTED"    from "TODO"       [2010-04-08 Thu 23:42]
+     don't forget to test Sally's case
+     add 400637 401066 401342
+
+     401342: filter not working in flash mode ..
+** DONE Interview with Shen, Kai
+   write a report about the phone interview
+   interview record sent
+** WAITING Issue 380773 threshold not applied			      :issue:
+   - State "WAITING"    from "TODO"       [2010-04-19 Mon 22:03] \\
+     investigation done, we should change the manipulation type of edit threhsold, waiting for Jing's reply
+** DONE Issue 395247 sorting not working			      :issue:
+   - State "STARTED"    from "TODO"       [2010-04-19 Mon 22:03]
+     document about the behavior:
+     https://resource.microstrategy.com/support/MainSearch.aspx?tnkey=20569&formatted=1
+     passed to web team
+
+** WAITING ACL in disabled units				      :issue:
+   - State "WAITING"    from "TODO"       [2010-04-20 Tue 21:33] \\
+     wait for the expected behavior of ACL on document, since Sally think there is some problem with it (inconsistent with the behavior on report)
+   - State "STARTED"    from "TODO"       [2010-04-14 Wed 22:55]
+*** TODO Update design document of disabled unit
+*** TODO Update design document of RWD ACL design
+*** TODO Log an issue on that and fix it(issue 402475)		      :issue:
+** DONE Issue 393123						      :issue:
+   - State "WAITING"    from ""           [2010-04-14 Wed 22:47] \\
+     waiting for check in
+** DONE Issue 401908 error when execute template widget with no dataset :issue:
+** DONE Issue 400950 Flash error when sort on attribute		      :issue:
+   - State "STARTED"    from ""           [2010-04-19 Mon 22:13]
+     the manipulation xml is wrong (missing attribute id)
+** DONE Issue 401130 replace dataset				      :issue:
+   - State "WAITING"    from "TODO"       [2010-04-13 Tue 23:06] \\
+     fixed, waiting for checking
+** DONE Issue 401812 From haifeng				      :issue:
+   - State "STARTED"    from "TODO"       [2010-04-22 Thu 22:18]
+     I-server doesn't escape XML string twice ... 
+** WAITING Issue 402583 Field parsing after rename metric	      :issue:
+   - State "WAITING"    from "TODO"       [2010-05-03 Mon 23:48] \\
+     check in
+   
+** DONE From yuxiao, DI size estimation feature.
+** WAITING Issue 405528, image field failed to change		      :issue:
+   - State "WAITING"    from "TODO"       [2010-05-04 Tue 22:23] \\
+     check in
+** TODO Change incorrect patterns to search disabled metrics
+CDSSDocumentManipulator::SetWidthClear
+ExtendBaseTemplateFromView
+** WAITING Replace dataset integration with Desktop and GUI 	:enhancement:
+   - State "WAITING"    from ""           [2010-04-07 Wed 21:28] \\
+     postponed after 9.0.2
+
 ** Archive							    :ARCHIVE:
-*** DONE Issue 399041						      :issue:
+*** TODO Issue 399041						      :issue:
     SCHEDULED: <2010-04-05 Mon>
     - State "STARTED"    from "DONE"       [2010-04-02 Fri 03:04]
     :PROPERTIES:
     :ARCHIVE_TIME: 2010-04-06 Tue 03:15
     :END:
     do not remove disabled metrics when copy template in RWD, check hPostProcessTemplate
+    Should not remove disabled metric limit. add new EnumType:TemplateRemoveMetricLimitOnDisabledMetric
+    to only remove metric limit of each disabled metric
+   
+   
     

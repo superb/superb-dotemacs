@@ -6,8 +6,8 @@ We will got two files under ~/.ssh folder: id_rsa and id_rsa.pub, use later one
 to register.
 
 ** Configuration
-: $ git config --global user.name "Thomas"
-: $ git config --global user.email ghosthomas@gmail.com
+: $ git config --global user.name "superb"
+: $ git config --global user.email chenyingliu@gmail.com
 
 ** Daily use
 1. create ~/superb-dotemacs to hold all files in repository
